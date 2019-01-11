@@ -78,9 +78,7 @@ $(document).ready(function() {
     console.log('hej');
     $('.vareinfo').hide();
   });
-  $('#story1').click(function(){
-    $(this).css('transform', 'scale(2)').css('z-index','99999999').get(0).play();
-  });
+  
 
   $('.all-content').scroll(function() {
     var screenwidth = $(window).width();
