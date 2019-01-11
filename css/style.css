@@ -262,7 +262,11 @@ h2 {
   cursor: pointer;
   float: right;
 }
-
+.stop-btn{
+  cursor: pointer;
+  float: right;
+  z-index: 9999999999999999;
+}
 /* #kutterlife mobil*/
 #kutter {
   margin-top: 1%;
