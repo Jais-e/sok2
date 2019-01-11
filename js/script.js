@@ -1,5 +1,3 @@
-
-
 'use strict'
 
 $(document).ready(function() {
@@ -97,8 +95,8 @@ $(document).ready(function() {
 
        $(vid).fadeIn();
      }
-  });
-
+});
+  
 
 // NOT working in viewport autoplay functionality //
 
