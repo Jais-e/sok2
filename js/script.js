@@ -82,22 +82,29 @@ $(document).ready(function() {
   });
 
 
+  $('.all-content').scroll(function() {
+    var screenwidth = $(window).width();
+    var minwidth = 480;
+    var vid = $('.fade-element');
+     var hT = $('#check1').offset().top,
+         hH = $('#check1').outerHeight(),
+         wH = $('.all-content').height(),
+         wS = $('.all-content').scrollLeft();
+     if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH) && (screenwidth > minwidth)){
+       $(vid).hide();
+
+     } else {
+
+       $(vid).fadeIn();
+     }
+  });
+
+
 // NOT working in viewport autoplay functionality //
-$('.all-content').scroll(function() {
-  var vid = document.getElementById('intro-video');
-   var hT = $('#check1').offset().top,
-       hH = $('#check1').outerHeight(),
-       wH = $('.all-content').height(),
-       wS = $('.all-content').scrollLeft();
-   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-     $(vid).get(0).pause();
-     console.log('not visible');
-   } else {
-      $(vid).get(0).play();
-      console.log('visible');
-   }
-});
+
 /*
+
+
   $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
