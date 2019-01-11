@@ -273,6 +273,8 @@ h2 {
   height: 40%;
 }
 
+.galleri {display: none;}
+
 /* tabel */
 table {
   border-collapse: collapse;
