@@ -277,7 +277,6 @@ h2 {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-family: SegoePrint;
 }
 
 th {
@@ -493,11 +492,19 @@ tr:nth-child(odd) {
     background: rgba(254, 252, 235, 0.5);
   }
   #kutter-desk{
+<<<<<<< HEAD
  width: 60%;
     margin-left:20%;
     font-family: SegoePrint;
     line-height: 20px;
 }
+=======
+    width: 60%;
+    margin-left:20%;
+    font-family: SegoePrint;
+    line-height: 20px;
+
+>>>>>>> parent of d7d16cb... billedgalleri
   }
   #history-desk {
     font-family: SegoePrint;

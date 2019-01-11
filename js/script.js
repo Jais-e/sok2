@@ -78,7 +78,7 @@ $(document).ready(function() {
     console.log('hej');
     $('.vareinfo').hide();
   });
-
+  
 
   $('.all-content').scroll(function() {
     var screenwidth = $(window).width();
